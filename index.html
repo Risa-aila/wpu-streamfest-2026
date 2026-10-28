@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WPU StreamFest 2026</title>
 </head>
-
 <body>
 
-    <!-- 1. HEADER -->
+    <!-- 1. HEADER DAN NAVIGASI -->
     <header>
         <h1>WPU StreamFest 2026</h1>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#lineup">Lineup</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#tickets">Tickets</a>
-            <a href="#gallery">Gallery</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#lineup">Lineup</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -28,42 +29,216 @@
         <section id="home">
             <h2>Neon Nights Music Festival</h2>
             <p>3 Days. 6 Indonesian Artists. Infinite Vibes.</p>
-            <p>June 15-17, 2026 | Jakarta International Expo</p>
+            <p>15–17 Juni 2026 | Jakarta International Expo</p>
             <a href="#tickets">Get Tickets</a>
         </section>
 
         <!-- 3. ABOUT SECTION -->
         <section id="about">
             <h2>About the Festival</h2>
-            <p>WPU StreamFest 2026 adalah festival musik untuk Gen Z.</p>
+            <p>
+                WPU StreamFest 2026 adalah festival musik yang menghadirkan
+                musisi Indonesia, pertunjukan musik, dan pengalaman seru
+                selama tiga hari. Festival ini menjadi tempat berkumpulnya
+                para pecinta musik untuk menikmati penampilan favorit mereka.
+            </p>
         </section>
 
         <!-- 4. LINEUP SECTION -->
         <section id="lineup">
             <h2>Artist Lineup</h2>
+            <p>Berikut contoh daftar artis yang dapat ditampilkan.</p>
+
+            <article>
+                <h3>Hindia</h3>
+                <img src="https://placehold.co/300x200?text=Hindia"
+                     alt="Gambar Hindia">
+            </article>
+
+            <article>
+                <h3>Raisa</h3>
+                <img src="https://placehold.co/300x200?text=Raisa"
+                     alt="Gambar Raisa">
+            </article>
+
+            <article>
+                <h3>Tulus</h3>
+                <img src="https://placehold.co/300x200?text=Tulus"
+                     alt="Gambar Tulus">
+            </article>
+
+            <article>
+                <h3>Sheila On 7</h3>
+                <img src="https://placehold.co/300x200?text=Sheila+On+7"
+                     alt="Gambar Sheila On 7">
+            </article>
+
+            <article>
+                <h3>Fourtwnty</h3>
+                <img src="https://placehold.co/300x200?text=Fourtwnty"
+                     alt="Gambar Fourtwnty">
+            </article>
+
+            <article>
+                <h3>Juicy Luicy</h3>
+                <img src="https://placehold.co/300x200?text=Juicy+Luicy"
+                     alt="Gambar Juicy Luicy">
+            </article>
         </section>
 
         <!-- 5. SCHEDULE SECTION -->
         <section id="schedule">
             <h2>Festival Schedule</h2>
+
+            <table>
+                <caption>Jadwal WPU StreamFest 2026</caption>
+
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Waktu</th>
+                        <th>Artis</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Hari 1</td>
+                        <td>16.00–18.00</td>
+                        <td>Hindia</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hari 1</td>
+                        <td>19.00–21.00</td>
+                        <td>Raisa</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hari 2</td>
+                        <td>16.00–18.00</td>
+                        <td>Tulus</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hari 2</td>
+                        <td>19.00–21.00</td>
+                        <td>Sheila On 7</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hari 3</td>
+                        <td>16.00–18.00</td>
+                        <td>Fourtwnty</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hari 3</td>
+                        <td>19.00–21.00</td>
+                        <td>Juicy Luicy</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- 6. TICKETS SECTION -->
         <section id="tickets">
             <h2>Get Your Tickets</h2>
+            <p>Isi formulir berikut untuk melakukan pemesanan tiket.</p>
+
+            <form action="#" method="post">
+                <label for="nama">Nama lengkap:</label>
+                <input type="text" id="nama" name="nama"
+                       placeholder="Masukkan nama lengkap" required>
+
+                <br><br>
+
+                <label for="email">Alamat email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Masukkan email" required>
+
+                <br><br>
+
+                <label for="jenis-tiket">Jenis tiket:</label>
+                <select id="jenis-tiket" name="jenis-tiket" required>
+                    <option value="">Pilih jenis tiket</option>
+                    <option value="regular">Regular</option>
+                    <option value="vip">VIP</option>
+                    <option value="3-day-pass">3-Day Pass</option>
+                </select>
+
+                <br><br>
+
+                <label for="jumlah">Jumlah tiket:</label>
+                <input type="number" id="jumlah" name="jumlah"
+                       min="1" max="10" required>
+
+                <br><br>
+
+                <button type="submit">Pesan Tiket</button>
+            </form>
         </section>
 
         <!-- 7. GALLERY SECTION -->
         <section id="gallery">
             <h2>Festival Gallery</h2>
+            <p>Berikut contoh gambar suasana festival musik.</p>
+
+            <figure>
+                <img src="https://placehold.co/400x250?text=Festival+1"
+                     alt="Suasana festival musik pertama">
+                <figcaption>Suasana festival musik</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://placehold.co/400x250?text=Festival+2"
+                     alt="Suasana festival musik kedua">
+                <figcaption>Penampilan musisi di atas panggung</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://placehold.co/400x250?text=Festival+3"
+                     alt="Suasana festival musik ketiga">
+                <figcaption>Penonton menikmati musik</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://placehold.co/400x250?text=Festival+4"
+                     alt="Suasana festival musik keempat">
+                <figcaption>Panggung festival</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://placehold.co/400x250?text=Festival+5"
+                     alt="Suasana festival musik kelima">
+                <figcaption>Momen pertunjukan musik</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://placehold.co/400x250?text=Festival+6"
+                     alt="Suasana festival musik keenam">
+                <figcaption>Keseruan bersama penonton</figcaption>
+            </figure>
         </section>
 
     </main>
 
     <!-- 8. FOOTER -->
     <footer>
-        <p>&copy; 2026 WPU StreamFest.</p>
-        <p>Email: hello@wpustreamfest.com</p>
+        <p>&copy; 2026 WPU StreamFest. All rights reserved.</p>
+
+        <p>
+            Email:
+            <a href="mailto:hello@wpustreamfest.com">
+                hello@wpustreamfest.com
+            </a>
+        </p>
+
+        <nav aria-label="Media sosial">
+            <a href="https://www.instagram.com/">Instagram</a>
+            |
+            <a href="https://www.youtube.com/">YouTube</a>
+        </nav>
     </footer>
 
 </body>
